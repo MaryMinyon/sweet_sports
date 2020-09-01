@@ -37,11 +37,11 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 59%;
+    height: 60%;
     padding: 0 2rem;
     /* Overlay */
     position: absolute;
-    top: 44px;
+    top: 4p5x;
     left: 0;
     right: 0;
     bottom: 0;
@@ -108,7 +108,7 @@
     padding: 0 1rem;
     /* Overlay */
     position: absolute;
-    top: 43px;
+    top: 45px;
     left: 0;
     right: 0;
     bottom: 0;
