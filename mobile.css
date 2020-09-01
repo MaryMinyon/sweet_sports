@@ -104,11 +104,11 @@
   }
 
   #blog .showcase-blog {
-    height: 59%;
+    height: 60%;
     padding: 0 1rem;
     /* Overlay */
     position: absolute;
-    top: 40px;
+    top: 43px;
     left: 0;
     right: 0;
     bottom: 0;
