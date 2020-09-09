@@ -135,6 +135,7 @@ p {
 }
 
 #navbar ul li a {
+  cursor: pointer;
   color: #fff;
   padding: 0.75rem;
   margin: 0 0.25rem;
@@ -147,10 +148,11 @@ p {
 
 /* Showcase */
 #showcase {
-  background: #333 url('../img/run-beach-cover.jpg') no-repeat center
+  background: #333 url('../images/run-beach-cover.jpg') no-repeat center
     center/cover;
   height: 100vh;
   color: #fff;
+  position: relative;
 }
 
 #showcase .showcase-content {
@@ -161,17 +163,25 @@ p {
   align-items: center;
   height: 100%;
   padding: 0 2rem;
-  /* Overlay */
-  position: absolute;
-  top: 58px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #showcase .showcase-content h3 {
   margin-bottom: 0.9rem;
+}
+
+#showcase::before {
+  content: '';
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#showcase * {
+  z-index: 10;
 }
 
 /* Section: customer favorites */
@@ -193,6 +203,12 @@ h2 .heading-favorites {
 .section-favorites .items img {
   width: 300px;
   height: 300px;
+}
+
+.section-favorites img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Shop */
@@ -285,6 +301,9 @@ main {
   width: 475px;
   height: 475px;
   border-radius: 50%;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
 }
 
 .about-img img {
@@ -297,32 +316,37 @@ main {
 }
 
 /* Blog */
-#blog {
-  background: #333 url('../img/blog-showcase.jpg') no-repeat center center/cover;
+.showcase-blog {
+  background: #333 url('../images/blog-showcase.jpg') no-repeat center
+    center/cover;
   height: 60vh;
   color: #fff;
-}
-
-#blog .showcase-blog {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 63%;
   padding: 0 2rem;
-  /* Overlay */
-  position: absolute;
-  top: 41px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
-#blog-container .blog-image {
-  max-width: 100%;
+.showcase-blog::before {
+  content: '';
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+.showcase-blog * {
+  z-index: 10;
+}
+
+/* #blog-container .blog-image {
+  max-width: 100%;
+} */
 
 #blog .showcase-blog h2 {
   margin-bottom: 0.9rem;
@@ -341,9 +365,15 @@ main {
   grid-gap: 1rem;
 }
 
+.blog-img {
+  width: 100%;
+  height: 100%;
+}
+
 .blog-img img {
-  width: 325px;
-  height: 325px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 /* Contact */

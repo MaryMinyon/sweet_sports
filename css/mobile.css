@@ -24,7 +24,7 @@
   }
 
   #showcase {
-    background: #333 url('../img/run-beach-cover.jpg') no-repeat center
+    background: #333 url('../images/run-beach-cover.jpg') no-repeat center
       center/cover;
     height: 50vh;
     width: 100%;
@@ -37,24 +37,13 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 58%;
+    height: 60%;
     padding: 0 2rem;
-    /* Overlay */
-    position: absolute;
-    top: 48px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
   }
 
   #showcase .showcase-content h1 {
-    padding-top: 15vh;
+    padding-top: 25vh;
     font-size: 1.5rem;
-  }
-
-  #showcase .showcase-content li {
-    font-size: 0.45rem;
   }
 
   .section-favorites {
@@ -65,8 +54,12 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    margin: 0;
     margin-bottom: 25px;
+  }
+
+  .section-favorites .items img {
+    width: 100%;
+    height: 100%;
   }
 
   .shop {
@@ -87,10 +80,10 @@
     border-radius: 5%;
   }
 
-  .about-img img {
+  .about .about-img img {
     margin-right: 1rem;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 
   #about .about-info {
@@ -98,21 +91,37 @@
     padding: 20px;
   }
 
-  /* Blog */
-  #blog {
+  .showcase-blog {
     height: 50vh;
+    padding: 0 1rem;
   }
 
-  #blog .showcase-blog {
-    height: 59%;
-    padding: 0 1rem;
+  .showcase-blog h1 {
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .showcase-blog h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .showcase-blog::before {
+    content: '';
     /* Overlay */
     position: absolute;
-    top: 39px;
-    left: 0;
+    top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .showcase-blog * {
+    z-index: 10;
   }
 
   #blog-container .main-blog {
@@ -124,6 +133,11 @@
   .blog-image img {
     height: 100%;
     max-width: 95%;
+  }
+
+  .blog-main .blog-img img {
+    height: 100%;
+    width: 100%;
   }
 
   /* Details: single item */
