@@ -148,7 +148,7 @@ p {
 
 /* Showcase */
 #showcase {
-  background: #333 url('../images/run-beach-cover.jpg') no-repeat center
+  background: #333 url('../img/run-beach-cover.jpg') no-repeat center
     center/cover;
   height: 100vh;
   color: #fff;
@@ -317,8 +317,7 @@ main {
 
 /* Blog */
 .showcase-blog {
-  background: #333 url('../images/blog-showcase.jpg') no-repeat center
-    center/cover;
+  background: #333 url('../img/blog-showcase.jpg') no-repeat center center/cover;
   height: 60vh;
   color: #fff;
   display: flex;
@@ -343,10 +342,6 @@ main {
 .showcase-blog * {
   z-index: 10;
 }
-
-/* #blog-container .blog-image {
-  max-width: 100%;
-} */
 
 #blog .showcase-blog h2 {
   margin-bottom: 0.9rem;
