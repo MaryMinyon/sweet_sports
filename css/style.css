@@ -201,8 +201,8 @@ h2 .heading-favorites {
 }
 
 .section-favorites .items img {
-  width: 300px;
-  height: 300px;
+  width: 290px;
+  height: 290px;
 }
 
 .section-favorites img {
@@ -226,8 +226,8 @@ h2 .heading-favorites {
 }
 
 .collection img {
-  height: 320px;
-  width: 350px;
+  height: 280px;
+  width: 290px;
 }
 
 /* Details */
@@ -325,7 +325,7 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 30px 2rem;
 }
 
 .showcase-blog::before {
@@ -335,8 +335,10 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 60vh;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 2rem;
 }
 
 .showcase-blog * {

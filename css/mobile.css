@@ -93,7 +93,7 @@
 
   .showcase-blog {
     height: 50vh;
-    padding: 0 1rem;
+    padding: 50px 1rem;
   }
 
   .showcase-blog h1 {
@@ -116,8 +116,9 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 65%;
+    height: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 1rem;
   }
 
   .showcase-blog * {
@@ -155,17 +156,23 @@
 
   .item-details h2 {
     margin-top: 1rem;
+    margin-left: 40px;
     padding-left: 10px;
   }
 
   .item-details h4,
   .item-size h4,
-  .item-specifics h4 {
+  .item-specifics h4,
+  .item-size ul,
+  .bullet-points ul {
+    margin-top: 0.3rem;
+    margin-left: 40px;
     padding-left: 10px;
   }
 
   .buy {
     padding-left: 10px;
+    margin-left: 40px;
     margin-bottom: 2rem;
   }
 
